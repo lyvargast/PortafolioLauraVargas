@@ -1,0 +1,634 @@
+*{
+	margin: 0;
+	border:0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/*INDEX*/
+/*PÁGINA 1*/
+body{
+	background-image: url("../images/background.jpg");
+	background-attachment: repeat;
+}
+header{
+	max-width: 1000px;
+	width:100%;
+	background-color: rgba(25,25,25);
+	max-height: 85px;
+	height:100%;
+	margin: auto;
+}
+.logo{
+	padding: 20px;
+	display: flex;
+	justify-content:space-between;
+}
+nav{
+	max-width: 1000px;
+	width:100%;
+	background-color: rgba(17,59,53);
+	max-height: 45px;
+	height:100%;
+	margin: auto;
+	text-align: left;
+}
+.menu >li { 
+	display: inline-block;
+	max-width: 160px;
+	width: 100%;
+	text-align: center;
+	line-height: 45px;
+	border-right:1px solid #FFFFFF;
+	font-size: 13px;
+	font-weight: bold; 
+}
+.menu li>a {
+	color:#FFFFFF; 
+	text-decoration: none; 
+}
+.submenu {
+position: absolute;
+top: 130px;
+background-color: #113835;
+max-width: 160px;
+width: 100%;
+visibility: hidden;
+opacity: 0;
+}
+.submenu li:hover {
+background-color: #EAEAEA;
+line-height:40px; 
+}
+.submenu li a:hover {
+line-height:40px; 
+color: #113835;
+}
+
+.menu li:hover .submenu{
+visibility: visible;
+opacity: 1;
+transition: opacity 2s;
+}
+#banner{
+	max-width: 1000px;
+	width:100%;
+	max-height: 300px;
+	height:100%;
+	margin: auto;
+	background-color: #EAEAEA;
+}
+#principal{
+	background-color: #FFFFFF;
+	max-width: 1000px;
+	width:100%;
+	min-height: 350px;
+	height:100%;
+	margin: auto;
+}
+.cajap{
+	width:33.3%;
+	float: left;
+	min-height: 300px;
+	height: 100%;
+	text-align: center;
+}
+.cajap h1{
+	margin: 20px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 25px;
+}
+.cajap p{
+	text-align: justify;
+	margin:20px; 
+}
+.cajap img{
+	margin-bottom: 20px;
+}
+#bottom{
+	clear: both;
+	color: white;
+	max-width: 1000px;
+	width:100%;
+	background-color: rgba(25,25,25);
+	min-height: 180px;
+	height: 100%;
+	margin: auto;
+}
+.cajab {
+	width:25%;
+	float: left;
+	min-height: 180px;
+	height: 100%;
+	text-align: center;
+	line-height: 20px;
+}
+.cajab h1 {
+	color: white;
+	text-align: center;
+	margin: 20px;
+	font-weight: 100px;
+}
+.cajab ul{
+	margin: 15px;
+}
+.cajab ul li{
+	text-align: left;
+	font-size: 15px;
+	list-style-image: url(../images/list.png);
+	list-style-position: inside;
+}
+.cajab ul li a{
+	text-decoration:none;
+	color: white;
+}
+.cajab img{
+	margin:auto;
+	border:4px solid #FFFFFF;
+}
+.redes li{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 100px;
+}
+.redes li:first-child{
+	background-image: url(../images/facebook.jpg);
+	background-size: cover;
+}
+.redes li:nth-child(2){
+	background-image: url(../images/iconoGoogle.jpg);
+	background-size: cover;
+}
+.redes li:nth-child(3){
+	background-image: url(../images/iconoPinterest.jpg);
+	background-size: cover;
+}
+.redes li:last-child{
+	background-image: url(../images/iconoTwitter.jpg);
+	background-size: cover;
+
+}
+.redes li a{
+	padding: 10px;
+}
+footer{
+	max-width: 1000px;
+	width:100%;
+	min-height:50px;
+	height: 100%;
+	background-color: rgba(0,0,0);
+	color:white;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+}
+/*PÁGINA 2*/
+/*QUIÉNES SOMOS*/
+#quienessomos{
+	max-width: 1000px;
+	width: 100%;
+	background-color: #EAEAEA;
+	margin: auto; 
+	min-height: 270px;
+}
+#quienessomos h1{
+	font-weight: bolder;
+	padding-top:10px;
+	padding-left: 30px;
+
+}
+#quienessomos .verticalLine{
+	border-left: thick solid #113835;
+	margin-left:10px;
+}
+#quienessomos hr{
+	margin:10px auto; 
+	width:95%;
+	border: 1px solid #C6C6C6;
+}
+#quienessomos p{
+	max-width: 500px;
+	margin:30px;
+	text-align: justify;
+	padding-left:10px;
+}
+#quienessomos img{
+	float: right;
+	max-width: 400px;
+	margin:5px 150px 0px 40px;
+	border-radius: 6px;
+	box-shadow: 4px 4px 5px #000000;
+	width: 230px;
+	height: 180px;
+	
+}
+/*Estilos COLABORADORES*/
+#colaboradores{
+	max-width: 1000px;
+	width:100%;
+	margin:auto;
+	background-color:#FFFFFF;
+	text-align: center;
+}
+#colaboradores .verticalLine{
+	border-left: thick solid #113835;
+	margin-left: 10px;
+}
+#colaboradores h1{
+	font-weight: 100px;
+	padding-top:10px; 
+	padding-left: 30px;
+	text-align:left;
+}
+#colaboradores hr{
+	margin:10px auto; 
+	width:95%;
+	border: 1px solid #C6C6C6;
+}
+.integrante{
+	margin-top: 20px;
+	width: 33%;
+	display: inline-block;
+}
+.integrante img{
+	width: 30%;
+	border-radius: 100%;
+
+}
+.datosint{
+	margin: 20px;
+}
+.datosint p{
+	text-align: left;
+}
+
+i{
+	padding: 10px;
+	background-color:rgba(17,59,53);
+	border-radius: 100%;
+	margin:5%;
+	color: #FFFFFF;
+}
+/*PÁGINA3*/
+/*SERVICIOS*/
+/*Estilo Botones */
+input{
+	width: 140px;
+	height: 40px;
+	background-color:rgba(17,59,53); 
+	border-radius: 5%;
+	color:#FFFFFF;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+	padding-right: 2px; 
+}
+input:hover {
+background-color: #EAEAEA;
+color: #113835;
+}
+/*Caja con título*/
+#servicios {
+	max-width: 1000px;
+	width: 100%;
+	background-color: #EAEAEA;
+	margin: auto; 
+	min-height: 270px;
+}
+#servicios h1{
+	font-weight: bolder;
+	padding-top:10px;
+	padding-left: 30px;
+}
+#servicios .verticalLine{
+	border-left: thick solid #113835;
+	margin-left:10px;
+}
+#servicios hr{
+	margin:10px auto; 
+	width:95%;
+	border: 1px solid #C6C6C6;
+}
+
+/*Primera caja*/
+#servicios img{
+	float: right;
+	margin: 0px 100px 100px 30px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 6px #000000;
+	width: 230px;
+	height: 180px;
+}
+#servicioletra h3{
+	font-weight: bolder;
+	padding: 10px 0px 0px 50px;
+	text-align: justify;
+}
+#servicioletra p{
+	padding: 10px 0px 0px 50px;
+	text-align: justify;
+}
+/* PROBLEMA PROBLEMA PROBLEMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA PÁRRAFOOOOOOOO PROBLEMA
+PROBLEMA PROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMA
+PROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMA*/
+/*Segunda caja*/
+#servicios2{
+	max-width: 1000px;
+	width: 100%;
+	background-color: #FFFFFF;
+	margin:auto; 
+	min-height: 270px;
+}
+#servicios2 img{
+	float: left;
+	margin: 30px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 6px #000000;
+	width: 230px;
+	height: 180px;
+}
+#servicioletra1 h3{
+	font-weight: bolder;
+	padding: 10px 0px 0px 0px;
+	text-align: justify;
+}
+/* PROBLEMA ESPECÍFICO CON EL *P* PROBLEMA ESPECÍFICO CON EL *P*PROBLEMA PROBLEMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA PÁRRAFOOOOOOOO PROBLEMA
+PROBLEMA PROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMA
+PROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMAPROBLEMA*/
+#servicioletra1 p{
+	padding: 10px 0px 0px 50px;
+	margin-right: 40px;
+	text-align: justify;
+}
+/*CAJA 3*/
+#servicios1{
+	max-width: 1000px;
+	width: 100%;
+	background-color: #EAEAEA;
+	margin: auto; 
+	min-height: 270px;
+}
+#servicios1 img{
+	float: right;
+	margin: 20px 100px 100px 30px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 6px #000000;
+	width: 230px;
+	height: 180px;
+}
+#servicioletra2 h3{
+	font-weight: bolder;
+	padding: 10px 0px 0px 50px;
+	text-align: justify;
+}
+#servicioletra2 p{
+	padding: 10px 0px 0px 50px;
+	text-align: justify;
+}
+
+/*CAJA 4*/
+#servicioletra3 h3{
+	font-weight: bolder;
+	padding: 10px 0px 0px 50px;
+	text-align: justify;
+}
+#servicioletra3 p{
+	margin-right: 150px;
+	padding: 10px 0px 0px 50px;
+	text-align: justify;
+}
+/*PÁGINA 4*/
+/*PRODUCTOS*/
+#productos1{
+	max-width: 1000px;
+	width:100%;
+	margin:auto;
+	background-color:#FFFFFF;
+	text-align: center;
+}
+#productos1 .verticalLine {
+	border-left: thick solid #113835;
+	margin-left: 10px;
+}
+#productos1 h1{
+	font-weight: 100px;
+	padding-top:10px; 
+	padding-left: 30px;
+	text-align:left;
+}
+#productos1 hr{
+	margin: auto; 
+	width:95%;
+	border: 1px solid #C6C6C6;
+	padding-bottom: 10px;
+	border-right: transparent;
+	border-left: transparent;
+	border-bottom: transparent;
+}
+/*CAJA GRANDE DE PRODUCTOS*/
+.cajaproductos{
+	display: flex;
+	width: 25%;
+	float: left;
+	min-height: 400px;
+	height: 100%;
+	text-align: center;
+	background-color:#FFFFFF;
+
+}
+/*CAJAS SEPARADAS CON SUS propiedades*/
+.cajadecorada1{
+	flex-direction: row;
+	box-shadow: 3px 3px 6px black;
+	width: 190px;
+	border-radius: 5px;
+	height: 350px;
+	margin: auto;
+}
+/* Propiedades de las imágenes*/
+.productos img{
+	width: 190px;
+	border-radius: 10px;
+}
+/*Propiedades de las cajas ASUS*/
+.cajaverde{
+	background-color: #113b35;
+	color: #EAEAEA;
+	height: 30px;
+}
+.cajaverde h4{
+padding-top: 5px;
+}
+.caracteristicas{
+	padding-left: 10px;
+}
+.caracteristicas h5{
+	font-weight: bold;
+	text-align: left;
+	margin-top: 10px;
+}
+.caracteristicas p{
+text-align: left;
+}
+.masinformacion{
+	text-align: left;
+}
+.masinformacion input{
+color: white;
+border-radius: 5px;	
+margin-top: 5px;
+}
+.masinformacion input:hover {
+background-color: #EAEAEA;
+color: #113b35;
+}
+/*PÁGINA 5*/
+/*CONTÁCTENOS*/
+.cajaencontrarnos{
+	max-width: 1000px;
+	width: 100%;
+	min-height: 350px;
+	height: 100%;
+	background-color: #EAEAEA;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+.texto h3{
+	color:#113b35; 
+	padding-top: 20px;
+}
+.texto li{
+padding-top: 5px;
+
+}
+.mapa{
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+	}
+.texto{
+	width:60%;
+}
+.mapa iframe{
+	border-radius: 100%;
+	border:6px solid white;
+	margin: 30px;
+}
+
+.texto i{
+	color: black;
+	background-color: transparent;
+	margin: auto;
+}
+.titenv{
+	max-width: 1000px;
+	width: 100%;
+	background-color: white;
+	margin: auto; 
+	min-height: 450px;
+}
+.titenv h1{
+	font-weight: bolder;
+	padding-top:10px;
+	padding-left: 30px;
+}
+.titenv .verticalLine{
+	border-left: thick solid #113835;
+	margin-left:10px;
+}
+.titenv hr{
+	margin:10px auto; 
+	width:95%;
+	border: 1px solid #C6C6C6;
+}
+#formulario{
+	max-width: 1000px;
+	width:100%;
+	margin: auto;	
+	padding:20px;
+}
+#formulario label{
+	width: 40%;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+#formulario input[type=text], input[type=tel], input[type=email],select,textarea{
+	width: 55%;
+	vertical-align: middle;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 1px solid #000000;
+	margin: 8px 0;
+	resize: none;
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
